@@ -3,24 +3,23 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5quvj70slbf2"
-path.s3tc="res://.godot/imported/texture_11.png-c09c9ba3db123a1e068195717139adc5.s3tc.ctex"
-path.etc2="res://.godot/imported/texture_11.png-c09c9ba3db123a1e068195717139adc5.etc2.ctex"
+path.s3tc="res://.godot/imported/texture_11.png-26cdd1dead6ee3f149958b6fc54058f4.s3tc.ctex"
 metadata={
-"imported_formats": ["s3tc", "etc2"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://addons/kenney_prototype_tools/textures/green/texture_11.png"
-dest_files=["res://.godot/imported/texture_11.png-c09c9ba3db123a1e068195717139adc5.s3tc.ctex", "res://.godot/imported/texture_11.png-c09c9ba3db123a1e068195717139adc5.etc2.ctex"]
+source_file="res://addons/kenney_prototype_tools/addons/kenney_prototype_tools/textures/green/texture_11.png"
+dest_files=["res://.godot/imported/texture_11.png-26cdd1dead6ee3f149958b6fc54058f4.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true

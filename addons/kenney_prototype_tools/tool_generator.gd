@@ -1,16 +1,42 @@
+@tool
+
 # Editor script to generate the materials and cube scenes using the Kenney textures in the textures folder
 extends Node
 
-@tool
-
 # Functions as a button to regenerate the materials and scenes
 @export var generate := false
+@export var debug    := true
 
-const textures_path := "res://addons/kenney_prototype_tools/textures"
-const materials_path := "res://addons/kenney_prototype_tools/materials/"
-const scenes_path := "res://addons/kenney_prototype_tools/scenes/"
+@export var cube_scene_path          := "cube.tscn"
+@export var cube_scene_absolute_path := false
 
-const cube_scene = preload("res://addons/tools/cube.tscn")
+var textures_path  := "textures"
+var materials_path := "materials/"
+var scenes_path    := "scenes/"
+
+var cube_scene: Resource
+
+func _ready():
+	var base_dir   = get_script().resource_path.get_base_dir()
+
+	textures_path  = base_dir.path_join(textures_path)
+	materials_path = base_dir.path_join(materials_path) 
+	scenes_path    = base_dir.path_join(scenes_path)
+
+	var cube_scene_load_path
+	if cube_scene_absolute_path:
+		cube_scene_load_path = cube_scene_path
+	else:
+		cube_scene_load_path = base_dir.path_join(cube_scene_path)
+
+	cube_scene = load(cube_scene_load_path)
+
+	if debug:
+		print("Textures Path     = %s" % textures_path)
+		print("Materials Path    = %s" % materials_path)
+		print("Scenes Path       = %s" % scenes_path)
+		print("Cube Scene Path   = %s" % cube_scene_path)
+		print("Cube Scene Loaded = %s" % (cube_scene != null))
 
 # Generates the material and the scene corresponding to this color and texture
 func generate_tex(col: String, tex_name: String):

@@ -3,24 +3,23 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://daw1jgqtebh68"
-path.s3tc="res://.godot/imported/texture_04.png-e9a0cac9b6d3d20aa2c4f64dce9fe111.s3tc.ctex"
-path.etc2="res://.godot/imported/texture_04.png-e9a0cac9b6d3d20aa2c4f64dce9fe111.etc2.ctex"
+path.s3tc="res://.godot/imported/texture_04.png-9c2a76ef45b9d94f1fddc668e13590a1.s3tc.ctex"
 metadata={
-"imported_formats": ["s3tc", "etc2"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://addons/kenney_prototype_tools/textures/red/texture_04.png"
-dest_files=["res://.godot/imported/texture_04.png-e9a0cac9b6d3d20aa2c4f64dce9fe111.s3tc.ctex", "res://.godot/imported/texture_04.png-e9a0cac9b6d3d20aa2c4f64dce9fe111.etc2.ctex"]
+source_file="res://addons/kenney_prototype_tools/addons/kenney_prototype_tools/textures/red/texture_04.png"
+dest_files=["res://.godot/imported/texture_04.png-9c2a76ef45b9d94f1fddc668e13590a1.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
